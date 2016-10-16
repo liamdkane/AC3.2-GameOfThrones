@@ -12,12 +12,13 @@ class GameOfThronesTableViewController: UITableViewController {
     
     var episodes = [GOTEpisode]()
     var seasons = Set<Int>()
+    
     enum Seasons: Int {
         case one = 1, two, three, four, five, six
+        
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         loadData()
         self.title = "A Song of Ice and Fire"
         self.view.backgroundColor = .lightGray
@@ -27,11 +28,7 @@ class GameOfThronesTableViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+  
     
     // MARK: - Table view data source
     
